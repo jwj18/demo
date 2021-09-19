@@ -1,16 +1,78 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
 			}
 		}
-	],
+	    
+        ,{
+            "path" : "pages/care/care",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/statistics/statistics",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+		
+	"tabBar": {
+		"color": "#bfbfbf",
+		"selectedColor": "#f3cf56",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath":"pages/home/home",
+				"iconPath":"static/img/icon_tabar1@2x.png",
+				"selectedIconPath":"static/img/icon_tabar1@2x.png",
+				"text":"早安"
+			},
+			{
+				"pagePath":"pages/care/care",
+				"iconPath":"static/img/icon_tabar2@2x.png",
+				"selectedIconPath":"static/img/icon_tabar2@2x.png",
+				"text":"排名"
+			},
+			{
+				"pagePath":"pages/statistics/statistics",
+				"iconPath":"static/img/icon_tabar3@2x.png",
+				"selectedIconPath":"static/img/icon_tabar3@2x.png",
+				"text":"统计"
+			},
+			{
+				"pagePath":"pages/my/my",
+				"iconPath":"static/img/icon_tabar4@2x.png",
+				"selectedIconPath":"static/img/icon_tabar4@2x.png",
+				"text":"我的"
+			}
+		]
 	}
 }
